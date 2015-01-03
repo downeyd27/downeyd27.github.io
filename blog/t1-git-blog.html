@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <head>
-  <title>Technical-blog</title>
+  <title>Dillon Downey's Blog</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
 </head>
 
 <main>
-  <h1>Dillon's Blog</h1>
-  <h2>Git Bloggin'</h2>
-  <h4>Friday December 12th</h4>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Technical Blog</a>
+      <a href="#">Cultural Blog</a>
+    </nav>
+  </header>
 
+
+  <div class="profile-pic-div">
+    <figure class="profile-picture">
+      <img src="../imgs/dillon-face-picture-scaled.jpg" alt="my profile picture" width="400" height="402" >
+      <nav class="contacting-me-nav">
+        <a href="https://github.com/downeyd27?tab=repositories"><img src="../imgs/GitHub-Mark-64px.png" width="32" height="32"></a>
+        <a href="https://www.linkedin.com/in/dillondowney"><img src="../imgs/LinkedIn.png" width="32" height="32"></a>
+        <a href="mailto:downeydillon@gmail.com"><img src="../imgs/Gmail.png" width="32" height="32"></a>
+        <a href="https://twitter.com/downeydillon1"><img src="../imgs/Twitter.png" width="32" height="32"></a>
+        <a href="http://www.quora.com/Dillon-Downey"><img src="../imgs/Quora.png" width="32" height="32"></a>
+      </nav>
+    </figure>
+  </div>
+  
   <section>
+    <header class="blog-header">
+      <h1>Technical Blog</h1>
+      <h2>Git Bloggin'</h2>
+      <h4>Friday December 12th</h4>
+    </header>
     <p>
         <strong>What are the benefits of version control?</strong><br>
         Version control has lots of benefits.  First, version control allows you to safegaurd the original master by creating cloned versions of a project.  If you accidently bug your program, no problem, you can trace your steps back to a committed version that works and start from there.  Also, if multiple people are working on the same project you can have someone review your version before merging it with the master branch. 
