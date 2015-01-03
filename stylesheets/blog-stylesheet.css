@@ -1,0 +1,57 @@
+html {
+	background-color: #ffffff;
+	font-size: 1em;
+	font-family: Verdana, Tahoma, Serif, Sans-serif;
+}
+
+
+
+
+.main-header {
+	position: relative;
+	border: solid;
+	margin-right: 20px;
+	padding: 5px;
+	height: 20%;
+	width: 60%;
+	float: right;
+
+}
+.main-nav {
+	text-align: center;
+	position: relative;
+}
+
+.blog-posts {
+	top: 100px;
+	width: 60%;
+	margin-right: 30px;
+	float: right;
+}
+
+.blog-header {
+	text-align: center;
+	padding: 5px;
+}
+
+.profile-picture {
+	top: 30px;
+	left: 30px;
+	position: fixed;
+	margin: 10px 10px 10px 10px;
+    padding: 4px 4px 4px 4px;
+    border: 3px solid;
+    margin: auto;	
+}
+
+.contacting-me-nav {
+	position: fixed;
+	padding: auto;
+	top: 470px;	
+	left: 100px;
+	margin: auto;
+}
+
+.contacting-me-nav img {
+	padding: 0 10px 0 10px;
+}
