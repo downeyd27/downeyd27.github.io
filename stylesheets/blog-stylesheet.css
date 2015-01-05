@@ -23,6 +23,7 @@ html {
 }
 
 .blog-posts {
+	border: 1px solid;
 	top: 100px;
 	width: 60%;
 	margin-right: 30px;
