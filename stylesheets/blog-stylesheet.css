@@ -1,8 +1,4 @@
-html {
-	background-color: #ffffff;
-	font-size: 1em;
-	font-family: Verdana, Tahoma, Serif, Sans-serif;
-}
+
 
 .main-header {
 	position: relative;
@@ -21,7 +17,6 @@ html {
 
 .blog-posts {
 	position: relative;
-	border: 1px solid;
 	top: 100px;
 	width: 60%;
 	margin-right: 30px;
@@ -32,6 +27,7 @@ html {
 	float: left;
 	text-align: center;
 	padding: 5px;
+	width: 100%;
 }
 
 .profile-picture {
@@ -52,6 +48,4 @@ html {
 	margin: auto;
 }
 
-.contacting-me-nav img {
-	padding: 0 10px 0 10px;
-}
+
