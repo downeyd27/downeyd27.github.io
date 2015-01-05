@@ -4,9 +4,6 @@ html {
 	font-family: Verdana, Tahoma, Serif, Sans-serif;
 }
 
-
-
-
 .main-header {
 	position: relative;
 	border: solid;
@@ -15,14 +12,15 @@ html {
 	height: 20%;
 	width: 60%;
 	float: right;
-
 }
+
 .main-nav {
 	text-align: center;
 	position: relative;
 }
 
 .blog-posts {
+	position: relative;
 	border: 1px solid;
 	top: 100px;
 	width: 60%;
@@ -31,6 +29,7 @@ html {
 }
 
 .blog-header {
+	float: left;
 	text-align: center;
 	padding: 5px;
 }
