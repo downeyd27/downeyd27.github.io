@@ -4,33 +4,54 @@ html {
 	font-family: Verdana, Tahoma, Serif, Sans-serif;
 }
 
-nav {
+header {
+	border-bottom: 1px solid;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.main {
+
+}
+
+.main-nav {
+	position: relative;
 	text-align: center;
 	height: 50px;
-	padding: 1px;
-	border: 1px solid;
-	margin: ;
-
+	margin-top: 15px;
 }
 
 .left-section {
 	display: inline-block;
 	position: relative;
-	width: 45%;
-	padding: 1px;
-	border: 1px solid;
-	margin: ;
 }
 
 .right-section {
-	display: inline-block;
 	width: 45%;
-	float: right;
-	padding: 1px;
+	height: 500px;
+	display: inline-block;
+	position: relative;
 	border: 1px solid;
-	margin: ;
+	box-shadow: 5px 5px;
+	top: -42px;
 }
 
-.contacting-me-nav img {
-	padding: 0 10px 0 10px;
+.about-me {
+	position: absolute;
+	display: inline-block;
+	width: 90;
+	margin: 0 20px 0 20px;
+}
+
+figcaption {
+	text-align: center;
+}
+
+.social-media img {
+	padding: 10px 10px 0 10px;
+}
+
+footer {
+	height: 50px;
+	margin-top: 30px;
 }
