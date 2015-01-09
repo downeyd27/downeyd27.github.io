@@ -6,63 +6,71 @@
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 </head>
 
-<main>
+<body>
   <header class="main-header">
     <nav class="main-nav">
       <a href="blog-index.html">Home</a>
       <a href="#">Projects</a>
-      <a href="#">Technical Blog</a>
-      <a href="#">Cultural Blog</a>
+      <a href="#">Blog</a>
     </nav>
   </header>
 
-  <div class="profile-pic-div">
-    <figure class="profile-picture">
-      <img src="../imgs/dillon-face-picture-scaled.jpg" alt="my profile picture" width="400" height="402" >
-      <nav class="contacting-me-nav">
-        <a href="https://github.com/downeyd27?tab=repositories"><img src="../imgs/GitHub-Mark-64px.png" width="32" height="32"></a>
-        <a href="https://www.linkedin.com/in/dillondowney"><img src="../imgs/LinkedIn.png" width="32" height="32"></a>
-        <a href="mailto:downeydillon@gmail.com"><img src="../imgs/Gmail.png" width="32" height="32"></a>
-        <a href="https://twitter.com/downeydillon1"><img src="../imgs/Twitter.png" width="32" height="32"></a>
-        <a href="http://www.quora.com/Dillon-Downey"><img src="../imgs/Quora.png" width="32" height="32"></a>
-      </nav>
-    </figure>
-  </div>
-
-  <section class="blog-posts">
-    <header class="blog-header">
-      <h1 class="post-title">Technical Blog</h1>
-      <h2 class="post-subtitle">CSS Design</h2>
-      <h4 class="todays-date">01/02/2015</h4>
-    </header>
-    <h2>What is the difference between Margin, Border, and Padding?</h2>
-    <p>
-      When beginning to think about html elements and how they take up space within a web browser, you must first think about the "box model."  Every element first contains the content.  This is usually the text or image.  Right outside the content of an element is the padding, which is the empty spacing leading up to the border.  A border can have many attributes.  Some including being dashed, dotted, or solid of any thickness and the border can also be any color.  After the border is the margin, which is empty spacing between neighboring elements.  
+  <main>
+    <section class="left-section">
       
-    </p>
-    <h2>What are the best practices associated with using classes vs. ids?</h2>
-    <p>
-      <ul>
-        <li>Classes: allow you too select multiple elements when using CSS from your HTML files as long as they all have the same class name</li>
-        <li>Ids: allow you to select one unique element with an id name when using CSS from your HTML file.  It is possible to use classes and ids on the same elements. </li><br>
-        I believe through my research a stackoverflow quote put it best, "The rule of thumb is that you should ask yourself: 'is there more than one element which requires the same style, now or at any time in the future?', and if the answer is even 'maybe', then make it a class."
-      </ul> 
-    </p>
-    <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
-    <p>
-      <ul>
-        <li>Relative: an element with a relative position can be moved "relative" to its normal position, which elements default at a static position (the order in which the elements appear on the document)</li>
-        <li>Absolute: an element with an absolute position is positioned based off of its first positioned non-static ancestor element</li>
-        <li>Fixed: an element with a fixed position is positioned relative to the browser window and takes the element out of the normal flow of positioned elements.  It is as if the other elements ignore a fixed position element.</li>
-      </ul>
-    </p>
-    <h2>What does it mean to display inline vs inline blocks?</h2>
-    <p>
-      <ul>
-        <li>Inline: When displaying an element inline you are allowing elements to sit the the left and right of the element</li>
-        <li>Inline-blocks: When displaying an element inline block you are telling the element to take up the whole row in the browser.  The element before will display on the line above and the element after will display on the line below the element. </li>
-      </ul>
-    </p>
-  </section>
-</main>
+      <figure class="profile-picture">
+        <figcaption>
+          <img src="../imgs/dillon-face-picture-scaled.jpg" alt="my profile picture" width="400" height="402" >
+          <nav class="social-media">
+            <a href="https://github.com/downeyd27?tab=repositories"><img src="../imgs/GitHub-Mark-64px.png" width="32" height="32"></a>
+            <a href="https://www.linkedin.com/in/dillondowney"><img src="../imgs/LinkedIn.png" width="32" height="32"></a>
+            <a href="mailto:downeydillon@gmail.com"><img src="../imgs/Gmail.png" width="32" height="32"></a>
+            <a href="https://twitter.com/downeydillon1"><img src="../imgs/Twitter.png" width="32" height="32"></a>
+            <a href="http://www.quora.com/Dillon-Downey"><img src="../imgs/Quora.png" width="32" height="32"></a>
+          </nav>
+        </figcaption>
+      </figure>
+    </section>
 
+    <section class="blog-posts">
+
+      <header class="blog-header">
+        <h1 class="post-title">Technical Blog</h1>
+        <h2 class="post-subtitle">CSS Design</h2>
+        <h4 class="todays-date">01/02/2015</h4>
+      </header>
+
+      <h2>What is the difference between Margin, Border, and Padding?</h2>
+      <p>
+        When beginning to think about html elements and how they take up space within a web browser, you must first think about the "box model."  Every element first contains the content.  This is usually the text or image.  Right outside the content of an element is the padding, which is the empty spacing leading up to the border.  A border can have many attributes.  Some including being dashed, dotted, or solid of any thickness and the border can also be any color.  After the border is the margin, which is empty spacing between neighboring elements.  
+      </p>
+      <h2>What are the best practices associated with using classes vs. ids?</h2>
+      <p>
+        <ul>
+          <li>Classes: allow you too select multiple elements when using CSS from your HTML files as long as they all have the same class name</li>
+          <li>Ids: allow you to select one unique element with an id name when using CSS from your HTML file.  It is possible to use classes and ids on the same elements. </li><br>
+          I believe through my research a stackoverflow quote put it best, "The rule of thumb is that you should ask yourself: 'is there more than one element which requires the same style, now or at any time in the future?', and if the answer is even 'maybe', then make it a class."
+        </ul> 
+      </p>
+      <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
+      <p>
+        <ul>
+          <li>Relative: an element with a relative position can be moved "relative" to its normal position, which elements default at a static position (the order in which the elements appear on the document)</li>
+          <li>Absolute: an element with an absolute position is positioned based off of its first positioned non-static ancestor element</li>
+          <li>Fixed: an element with a fixed position is positioned relative to the browser window and takes the element out of the normal flow of positioned elements.  It is as if the other elements ignore a fixed position element.</li>
+        </ul>
+      </p>
+      <h2>What does it mean to display inline vs inline blocks?</h2>
+      <p>
+        <ul>
+          <li>Inline: When displaying an element inline you are allowing elements to sit the the left and right of the element</li>
+          <li>Inline-blocks: When displaying an element inline block you are telling the element to take up the whole row in the browser.  The element before will display on the line above and the element after will display on the line below the element. </li>
+        </ul>
+      </p>
+    </section>
+
+    <footer>
+      Dillon Downey &nbsp; &copy; 2015
+    </footer>
+  </main>
+</body>
