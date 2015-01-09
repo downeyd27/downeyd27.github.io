@@ -10,13 +10,10 @@ header {
 	margin-bottom: 10px;
 }
 
-.main {
-
-}
-
 .main-nav {
 	position: relative;
 	text-align: center;
+	font-size: 1.5em;
 	height: 50px;
 	margin-top: 15px;
 }
@@ -39,7 +36,7 @@ header {
 .about-me {
 	position: absolute;
 	display: inline-block;
-	width: 90;
+	width: 90px;
 	margin: 0 20px 0 20px;
 }
 

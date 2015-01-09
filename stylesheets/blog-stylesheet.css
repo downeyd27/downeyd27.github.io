@@ -1,20 +1,5 @@
 
-
-.main-header {
-	position: relative;
-	border: solid;
-	margin-right: 20px;
-	padding: 5px;
-	height: 20%;
-	width: 60%;
-	float: right;
-}
-
-.main-nav {
-	text-align: center;
-	position: relative;
-}
-
+/*
 .blog-posts {
 	position: relative;
 	top: 100px;
@@ -22,30 +7,20 @@
 	margin-right: 30px;
 	float: right;
 }
+*/
+
+.blog-posts {
+	position: absolute;
+	margin: 0 20px 0 20px;
+}
 
 .blog-header {
-	float: left;
-	text-align: center;
+	position: relative;
 	padding: 5px;
-	width: 100%;
+	height: 150px;
 }
 
-.profile-picture {
-	top: 30px;
-	left: 30px;
-	position: fixed;
-	margin: 10px 10px 10px 10px;
-    padding: 4px 4px 4px 4px;
-    border: 3px solid;
-    margin: auto;	
+p {
+	border: 1px solid;
+	width: 100%;	
 }
-
-.contacting-me-nav {
-	position: fixed;
-	padding: auto;
-	top: 470px;	
-	left: 100px;
-	margin: auto;
-}
-
-
