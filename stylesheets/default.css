@@ -30,8 +30,21 @@ header {
 }
 
 .left-section {
+	left: 5%;
+	margin: 0 5% 0 5%;
+	border: 1px solid;
+	width: 40%;
 	display: inline-block;
 	position: relative;
+}
+
+.right-section-homepage {
+	width: 40%;
+	height: 696px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid;
+	box-shadow: 5px 5px;
 }
 
 figcaption {
@@ -50,15 +63,7 @@ figcaption {
 	padding-right: auto;
 }
 
-.right-section {
-	width: 50%;
-	height: 500px;
-	display: inline-block;
-	position: relative;
-	border: 1px solid;
-	box-shadow: 5px 5px;
-	top: -42px;
-}
+
 
 .about-me {
 	position: absolute;
