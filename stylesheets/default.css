@@ -25,7 +25,6 @@ header {
 	margin-top: 15px;
 }
 section{
-	border: 1px solid black;
 	margin: 0 auto;
 	display: inline-block;
 	position: relative;
@@ -38,6 +37,14 @@ section{
 	height: 500px;
 	box-shadow: 5px 5px;
 	margin-bottom: 20px;
+}
+
+.blog-index-right-section-content {
+	position: absolute;
+	display: inline-block;
+	width: 350px;
+	margin: 0 20px;
+
 }
 
 figcaption {
