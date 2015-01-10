@@ -32,19 +32,9 @@ header {
 .left-section {
 	left: 5%;
 	margin: 0 5% 0 5%;
-	border: 1px solid;
 	width: 40%;
 	display: inline-block;
 	position: relative;
-}
-
-.right-section-homepage {
-	width: 40%;
-	height: 696px;
-	display: inline-block;
-	position: relative;
-	border: 1px solid;
-	box-shadow: 5px 5px;
 }
 
 figcaption {
@@ -63,8 +53,6 @@ figcaption {
 	padding-right: auto;
 }
 
-
-
 .about-me {
 	position: absolute;
 	display: inline-block;
@@ -72,7 +60,22 @@ figcaption {
 	margin: 0 20px 0 20px;
 }
 
+.right-section {
+	width: 40%;
+	height: 675px;
+	display: inline-block;
+	position: absolute;
+	border: 1px solid;
+	box-shadow: 5px 5px;
+}
+
+.right-section-content {
+	margin: 30px 0 0 20px;
+
+}
+
 footer {
+	margin-left: 25px;
 	padding: 100px 0 0 20px;
     bottom: 0;
     width: 100%;
