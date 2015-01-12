@@ -17,19 +17,56 @@
     </header>
 
     <section class="blog">
-        <h1>Technical Blog</h1>
-        <h2>Arrays and Hashes</h2>
-        <h5>01/11/15</h5>     
-       
-        <p>
-            Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
-        </p>
-        <p>
-            Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
-        </p>
-        <p>
-            Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
-        </p>
+      <h1>Technical Blog</h1>
+      <h2>Arrays and Hashes</h2>
+      <h5>01/11/15</h5>     
+      
+      <h4>Arrays</h4>
+      <p>
+          In programming you find yourself using lots of variables to assign pieces of data to. What if you want to perform the same data manipulation over lots of variables?  It wouldn't be practical to type out tens, or hundreds, or thousands, or any large amount of variables if all you want to do is peform the same block of code.  Arrays are great substitions when variables fall short.  An Array is the first commonly used "data structure."  A Data structure is essential an efficient way of organize data suited best for the task it is designed for.  You are also able to hold multiple data types like integers, strings, floats, or others classes of data with an array at the same time.  Arrays are considered ordered, integer-indexed collection of objects.  This coinsides with the meaning of structure in "data structure" because you are able to hold the position of the objects in an ordered and controllable fashion.  This allows you to hold objects in an efficient way.  Do to the order of an array you are able to access any index by referring to the arrays index.<br>
+          Example: array = [1, 2, 3, 4, 5, 6]                       <br>
+                   array[3]                                         <br>
+                   => 4                                             <br>
+          This is also a good time to note, as you can see from the example above, that arrays indexes begin at 0.  This can be a common confusion when being first introduced to arrays.
+      </p>
+      <p>
+          There are a few different ways that you can create an array.
+          <ol>
+            <li>Array.new(number_of_elements, value) method:  This is a common way to populate an empty array with the amount of elements based off of what number of elements you give as a parameter to the new array method.  You can also choose to add a second parameter, which is the value you want the elements to be assigned to.  This will assign every element to the same value passed to the Array.new.  You can even go one step further and populate an array with a code block.  See examples below.<br>
+
+            Examples: Array.new(3)                      <br>
+                    =>[nil, nil, nil]                   <br>
+                      Array.new(3, "abc")               <br>
+                    =>["abc","abc","abc"]               <br>
+                      n = 0                             <br>
+                    =>0                                 <br>
+                      Array.new(3) { n += 1; n * 10 }   <br>
+                    => [10, 20, 30]
+            </li>
+            <li>The literal array constructor is another very common way of creating an array and it is simply executed by assigned square brackets '[ ]' to a name of your choice.  The array can also be populated at the same time by adding in data separated by a comma.<br>
+
+              Examples: Array = []<br>
+                        Array = [26, "Dillon", "Downey"]
+            </li>
+          </ol>
+      </p>
+      <h4>Hashes</h4>
+      <p>
+          If you have been able to follow allong with arrays, you are in luck because hashes are not too different.  Instead of using square brackets '[ ]' like in arrays we use curly braces '{ }' for our syntax.  The other key point of hashes is that the data structure is not considered integer ordered indexes.  Each index in a hash gets what is called a key-value pair.                                          <br>
+          Examples: hash = { :key => value, :key => value }                    <br>
+                    hash = { key: value, key: value }                          <br>
+                    hash = { :first_name => "Dillon", :last_name => "Downey" } <br>
+                    hash = { first_name: "Dillon", last_name: Downey }         <br>
+          It is important to note that you can only have one key assigned to one value, but you can have the same value assigned to multiple keys 
+      </p>
+      <h4>Additional Resources</h4>
+      <ul>
+        <li><a href="http://www.ruby-doc.org/core-2.2.0/Array.html#method-i-hash">Array and Hash Ruby Docs</a></li>
+        <li>Chris Pine's <em>Learn to Program</em></li>
+        <li>David Black's <em>The Well-Grounded Rubyist</em></li>
+      </ul>
+      
+      <a href=""></a>
     </section>
 
   </body>
