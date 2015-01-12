@@ -23,10 +23,11 @@
       
       <h4>Arrays</h4>
       <p>
-          In programming you find yourself using lots of variables to assign pieces of data to. What if you want to perform the same data manipulation over lots of variables?  It wouldn't be practical to type out tens, or hundreds, or thousands, or any large amount of variables if all you want to do is peform the same block of code.  Arrays are great substitions when variables fall short.  An Array is the first commonly used "data structure."  A Data structure is essential an efficient way of organize data suited best for the task it is designed for.  You are also able to hold multiple data types like integers, strings, floats, or others classes of data with an array at the same time.  Arrays are considered ordered, integer-indexed collection of objects.  This coinsides with the meaning of structure in "data structure" because you are able to hold the position of the objects in an ordered and controllable fashion.  This allows you to hold objects in an efficient way.  Do to the order of an array you are able to access any index by referring to the arrays index.<br>
-          Example: array = [1, 2, 3, 4, 5, 6]                       <br>
-                   array[3]                                         <br>
-                   => 4                                             <br>
+          In programming you find yourself using lots of variables to assign pieces of data to. What if you want to perform the same data manipulation over lots of variables?  It wouldn't be practical to type out tens, or hundreds, or thousands, or any large amount of variables if all you want to do is peform the same block of code.  Arrays are great substitions when variables fall short.  An Array is the first commonly used "data structure."  A Data structure is essential an efficient way of organize data suited best for the task it is designed for.  You are also able to hold multiple data types like integers, strings, floats, or others classes of data with an array at the same time.  Arrays are considered ordered, integer-indexed collection of objects.  This coinsides with the meaning of structure in "data structure" because you are able to hold the position of the objects in an ordered and controllable fashion.  This allows you to hold objects in an efficient way.  Do to the order of an array you are able to access any index by referring to the arrays index.            <br>
+          Example:                                                      <br>
+          <code>array = [1, 2, 3, 4, 5, 6]</code>                       <br>
+          <code>array[3]                  </code>                       <br>
+          <code>=> 4                      </code>                       <br>
           This is also a good time to note, as you can see from the example above, that arrays indexes begin at 0.  This can be a common confusion when being first introduced to arrays.
       </p>
       <p>
@@ -34,29 +35,32 @@
           <ol>
             <li>Array.new(number_of_elements, value) method:  This is a common way to populate an empty array with the amount of elements based off of what number of elements you give as a parameter to the new array method.  You can also choose to add a second parameter, which is the value you want the elements to be assigned to.  This will assign every element to the same value passed to the Array.new.  You can even go one step further and populate an array with a code block.  See examples below.<br>
 
-            Examples: Array.new(3)                      <br>
-                    =>[nil, nil, nil]                   <br>
-                      Array.new(3, "abc")               <br>
-                    =>["abc","abc","abc"]               <br>
-                      n = 0                             <br>
-                    =>0                                 <br>
-                      Array.new(3) { n += 1; n * 10 }   <br>
-                    => [10, 20, 30]
+            Examples:                                        <br>
+            <code>>Array.new(3)</code>                       <br>
+            <code>=>[nil, nil, nil]</code>                   <br>
+            <code>>Array.new(3, "abc")</code>                <br>
+            <code>=>["abc","abc","abc"]</code>               <br>
+            <code>>>n = 0</code>                             <br>
+            <code>=>0</code>                                 <br>
+            <code>>>Array.new(3) { n += 1; n * 10 }</code>   <br>
+            <code>=>[10, 20, 30]</code> 
             </li>
             <li>The literal array constructor is another very common way of creating an array and it is simply executed by assigned square brackets '[ ]' to a name of your choice.  The array can also be populated at the same time by adding in data separated by a comma.<br>
 
-              Examples: Array = []<br>
-                        Array = [26, "Dillon", "Downey"]
+              <code>Examples:</code>                            <br>
+              <code>Array = []</code>                          <br>
+              <code>Array = [26, "Dillon", "Downey"]</code>     <br>
             </li>
           </ol>
       </p>
       <h4>Hashes</h4>
       <p>
-          If you have been able to follow allong with arrays, you are in luck because hashes are not too different.  Instead of using square brackets '[ ]' like in arrays we use curly braces '{ }' for our syntax.  The other key point of hashes is that the data structure is not considered integer ordered indexes.  Each index in a hash gets what is called a key-value pair.                                          <br>
-          Examples: hash = { :key => value, :key => value }                    <br>
-                    hash = { key: value, key: value }                          <br>
-                    hash = { :first_name => "Dillon", :last_name => "Downey" } <br>
-                    hash = { first_name: "Dillon", last_name: Downey }         <br>
+          If you have been able to follow allong with arrays, you are in luck because hashes are not too different.  Instead of using square brackets '[ ]' like in arrays we use curly braces '{ }' for our syntax.  The other key point of hashes is that the data structure is not considered integer ordered indexes.  Each index in a hash gets what is called a key-value pair.                                                         <br>
+          Examples:                                                               <br>
+          <code>hash = { :key => value, :key => value }</code>                    <br>
+          <code>hash = { key: value, key: value }</code>                          <br>
+          <code>hash = { :first_name => "Dillon", :last_name => "Downey" }</code> <br>
+          <code>hash = { first_name: "Dillon", last_name: Downey }</code>         <br>
           It is important to note that you can only have one key assigned to one value, but you can have the same value assigned to multiple keys 
       </p>
       <h4>Additional Resources</h4>
