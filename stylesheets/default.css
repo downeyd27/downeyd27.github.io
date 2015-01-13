@@ -1,5 +1,5 @@
 html {
-	background-color: #669966;
+	background-color: #C2EAC2;
 	font-size: 1em;
 	font-family: Verdana, Tahoma, Serif, Sans-serif;
 }
@@ -51,6 +51,7 @@ section{
 }
 
 .right-section{
+	background-color: #ffffff;
 	border: 1px solid black;
 	width: 400px;
 	height: 500px;
