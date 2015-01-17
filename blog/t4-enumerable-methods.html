@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <!-- saved from url=(0090)file:///Users/dillondowney/Desktop/DBC/downeyd27.github.io/blog/t4-enumerable-methods.html -->
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Dillon Downey's Blogs</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-    </head>
+  </head>
   <body>
 
     <header>
@@ -28,32 +28,34 @@
         </p>
 
         <h3><a href="http://ruby-doc.org/core-2.1.1/Enumerable.html#method-i-map">#map</a></h3>
-        <p> 
-            </p><pre class="prettyprint">              map { |object| block } → array<br>
-              map → an_enumerator</pre><br>
-              The map method is a very handy method for returning a new array with the results of running the block code once for every element in enum.  If no block is given, an enumerator is returned.                                 <br>
-              <span class="bold">Example:</span>                      <br>
-            <pre class="prettyprint">              array = [1,2,3,4,5,6,7,8,9,10]                        <br>
-              new_array = array.map { |object| object.to_s}         <br>
-              p new_array                                           <br>
-              =&gt; ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-            </pre>  
+        <pre class="prettyprint">              
+          map { |object| block } → array<br>
+          map → an_enumerator</pre><br>
+          The map method is a very handy method for returning a new array with the results of running the block code once for every element in enum.  If no block is given, an enumerator is returned.                                 <br>
+          <span class="bold">Example:</span>                      <br>
+        <pre class="prettyprint">              
+          array = [1,2,3,4,5,6,7,8,9,10]                        <br>
+          new_array = array.map { |object| object.to_s}         <br>
+          p new_array                                           <br>
+          =&gt; ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+        </pre>  
 
-        <p></p>
         <h3><a href="http://ruby-doc.org/core-2.1.1/Enumerable.html#method-i-group_by">#group_by</a></h3>
         <p>
-            </p><pre class="prettyprint">              group_by { |object| block } → a_hash  <br>
+            </p><pre class="prettyprint">              
+              group_by { |object| block } → a_hash  <br>
               group_by → an_enumerator              <br>
               </pre>
               <span class="bold">group_by:</span> will create a <code>hash</code>.  The <span class="bold">keys</span> of this hash will be the evaluated result of the block.  The <span class="bold">values</span> of this hash will contain an array of the elements within the collection. Essentially the array of values is a group that has the common interest -- based off of the result of the block -- with a shared key.<br> 
               <span class="bold">Example:</span>                      <br>
-            <pre>              animal_array = ["dog", "cat", "cat", "chicken", "dog", "mouse", "cat", "chicken", "dog", "cat", "chicken" ]
+            <pre>              animal_array = ["dog", "cat", "cat", "chicken", "dog", "mouse", "cat", "chicken",<br> "dog", "cat", "chicken" ]
               animal_array = animal_array.group_by { |animal|  }
               puts animal_array
-              =&gt; {nil=&gt;["dog", "cat", "cat", "chicken", "dog", "mouse", "cat", "chicken", "dog", "cat", "chicken"]}
+              =&gt; {nil=&gt;["dog", "cat", "cat", "chicken", "dog", "mouse", "cat", "chicken", "dog",<br> "cat", "chicken"]}
               animal_array = animal_array.group_by { |animal| animal }
               puts animal_array
-              =&gt; {"dog"=&gt;["dog", "dog", "dog"], "cat"=&gt;["cat", "cat", "cat", "cat"], "chicken"=&gt;["chicken", "chicken", "chicken"], "mouse"=&gt;["mouse"]}
+              =&gt; {"dog"=&gt;["dog", "dog", "dog"], "cat"=&gt;["cat", "cat", "cat", "cat"],<br>
+               "chicken"=&gt;["chicken", "chicken", "chicken"], "mouse"=&gt;["mouse"]}
             </pre>
         <p></p>
         <h3><a href="http://ruby-doc.org/core-2.1.1/Enumerable.html#method-i-cycle">#cycle</a></h3>
