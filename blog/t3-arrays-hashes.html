@@ -30,29 +30,27 @@
           <code>=> 4                      </code>                       <br>
           This is also a good time to note, as you can see from the example above, that arrays indexes begin at 0.  This can be a common confusion when being first introduced to arrays.
       </p>
-      <p>
-          There are a few different ways that you can create an array.
-          <ol>
-            <li>Array.new(number_of_elements, value) method:  This is a common way to populate an empty array with the amount of elements based off of what number of elements you give as a parameter to the new array method.  You can also choose to add a second parameter, which is the value you want the elements to be assigned to.  This will assign every element to the same value passed to the Array.new.  You can even go one step further and populate an array with a code block.  See examples below.<br>
+      <p>There are a few different ways that you can create an array.</p>
+        <ol>
+          <li>Array.new(number_of_elements, value) method:  This is a common way to populate an empty array with the amount of elements based off of what number of elements you give as a parameter to the new array method.  You can also choose to add a second parameter, which is the value you want the elements to be assigned to.  This will assign every element to the same value passed to the Array.new.  You can even go one step further and populate an array with a code block.  See examples below.<br>
 
-            Examples:                                        <br>
-            <code>>Array.new(3)</code>                       <br>
-            <code>=>[nil, nil, nil]</code>                   <br>
-            <code>>Array.new(3, "abc")</code>                <br>
-            <code>=>["abc","abc","abc"]</code>               <br>
-            <code>>>n = 0</code>                             <br>
-            <code>=>0</code>                                 <br>
-            <code>>>Array.new(3) { n += 1; n * 10 }</code>   <br>
-            <code>=>[10, 20, 30]</code> 
-            </li>
-            <li>The literal array constructor is another very common way of creating an array and it is simply executed by assigned square brackets '[ ]' to a name of your choice.  The array can also be populated at the same time by adding in data separated by a comma.<br>
+          Examples:                                        <br>
+          <code>>Array.new(3)</code>                       <br>
+          <code>=>[nil, nil, nil]</code>                   <br>
+          <code>>Array.new(3, "abc")</code>                <br>
+          <code>=>["abc","abc","abc"]</code>               <br>
+          <code>>>n = 0</code>                             <br>
+          <code>=>0</code>                                 <br>
+          <code>>>Array.new(3) { n += 1; n * 10 }</code>   <br>
+          <code>=>[10, 20, 30]</code> 
+          </li>
+          <li>The literal array constructor is another very common way of creating an array and it is simply executed by assigned square brackets '[ ]' to a name of your choice.  The array can also be populated at the same time by adding in data separated by a comma.<br>
 
-              <code>Examples:</code>                            <br>
-              <code>Array = []</code>                          <br>
-              <code>Array = [26, "Dillon", "Downey"]</code>     <br>
-            </li>
-          </ol>
-      </p>
+            <code>Examples:</code>                            <br>
+            <code>Array = []</code>                          <br>
+            <code>Array = [26, "Dillon", "Downey"]</code>     <br>
+          </li>
+        </ol>
       <h4>Hashes</h4>
       <p>
           If you have been able to follow allong with arrays, you are in luck because hashes are not too different.  Instead of using square brackets '[ ]' like in arrays we use curly braces '{ }' for our syntax.  The other key point of hashes is that the data structure is not considered integer ordered indexes.  Each index in a hash gets what is called a key-value pair.                                                         <br>
