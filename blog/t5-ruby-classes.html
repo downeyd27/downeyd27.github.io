@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dillon Downey's Blogs</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+  <body>
+
+    <header>
+      <nav class="main-nav">
+        <a href="index.html">Homepage</a>
+        <a href="#">Projects</a>
+        <a href="blog-index.html">Blogs</a>
+      </nav>
+    </header>
+
+    <section class="blog">
+        <h1>Technical Blog</h1>
+        <h2>The When, Why, and How of Ruby Classes</h2>
+        <h5>01/21/15</h5> 
+           
+        <h3>When</h3>    
+        <p>
+            A <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;es_th=1&amp;ie=UTF-8#safe=off&amp;q=define%20class">class</a> is a set or category of things having some property or attribute in common and differentiated from others by kind, type, or quality.  Organizing methods and instance variables within a class is almost always useful, so you want to use them whenever you find the program is going to need maintaince or reused or changed, so pretty much always, but if you have a program that isn't going to need chunks reused elsewhere
+            you may not need to break it into a class.  This seems to be quite rare and probably a bad habbit.
+        </p>
+        <h3>Why</h3>
+        <p>
+            You want to create classes so you can keep organizing methods and variables with similar kind, type, and quality. What if you want to create methods and variables to manipulate an address.
+            You can create method to return just the street, or zipcode, or state, or name if you organize
+            a class with methods and variables for each piece of information.  Organizing your data this way
+            can allow you to write and read the variables of this class while safegaurding your variables from
+            global variables or other funny things that may arrise in the future.  So, safegaurding your variables from being changed is one major reason we like to put stuff into classes.  Also, putting
+            stuff within classes and subclasses condenses the amount of jobs each class has.  Keeping the job of a class reasonable will help programmers know what to expect out of a class and make it easier to understand what is going on.
+        </p>
+        <h3>How</h3>
+        <p>
+            A class is first defined like a normal method is but instead of the syntax<br>
+            <pre>
+              def method_name
+              end
+            </pre>
+            you use:<br>
+            <pre>
+              Class class_name
+              end
+            </pre>
+            Within the class is methods and variables called instance variables that are used only when pertaining to the class.  The methods can either be a getter method(attr_read method), setter method(attr_write method), or both(attr_accessor).
+        </p>
+        <p>  
+            <span class="bold">Getter method:</span> a method that can read and return data as long as the calling object is of the same class.  A getter method does not change the calling object.
+            <pre>
+              def venue
+                @venue
+              end
+            </pre>
+
+        </p>
+            <span class="bold">Setter method:</span> on the other hand can set or change the value of the calling object by passing an argument to the setter method.  
+            <pre>
+              def price=(price)
+                @price = price
+              end  
+            </pre>
+        </p>
+        <h3>Real-world Object</h3>
+        <p>
+            <pre>
+              Class Car
+                attr_reader :year, :make, :model 
+                attr_accessor :price
+
+                def initialize(year, make, model)
+                   @year = year
+                   @make = make
+                   @model = model
+                end
+              end
+            </pre>
+            In this example you see the Class Car is initialized when a car's year, make and model are passed as arguments and then assigned to their appropriate instance variable.  At the top of the class declaration we have attr_reader of year, make, and model, which means we can call these as methods to check what year <em>car</em> object is but we can't change these attributes once they are assigned to a car object because a Ford can't turn into a Toyota; however, the price of a car change at any time.  To handle this you add atttr_accesor, so this method can read what the price of a car is and write a new price if desired.
+        </p>
+    </section>
+
+  </body>
+</html>
