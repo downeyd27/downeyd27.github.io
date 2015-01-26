@@ -37,7 +37,8 @@
         </p>
         <h3>How</h3>
         <p>
-            A class is first defined like a normal method is but instead of the syntax<br>
+            A class is first defined like a normal method is but instead of the syntax
+        </p>
             <pre>
               def method_name
               end
@@ -47,38 +48,41 @@
               Class class_name
               end
             </pre>
+        <p>
             Within the class is methods and variables called instance variables that are used only when pertaining to the class.  The methods can either be a getter method(attr_read method), setter method(attr_write method), or both(attr_accessor).
         </p>
         <p>  
             <span class="bold">Getter method:</span> a method that can read and return data as long as the calling object is of the same class.  A getter method does not change the calling object.
+        </p>
             <pre>
               def venue
                 @venue
               end
             </pre>
-
-        </p>
+        <p>
             <span class="bold">Setter method:</span> on the other hand can set or change the value of the calling object by passing an argument to the setter method.  
+        </p>
             <pre>
               def price=(price)
                 @price = price
               end  
             </pre>
-        </p>
-        <h3>Real-world Object</h3>
-        <p>
-            <pre>
-              Class Car
-                attr_reader :year, :make, :model 
-                attr_accessor :price
 
-                def initialize(year, make, model)
-                   @year = year
-                   @make = make
-                   @model = model
-                end
-              end
-            </pre>
+        <h3>Real-world Object</h3>
+        
+        <pre>
+          Class Car
+            attr_reader :year, :make, :model 
+            attr_accessor :price
+
+            def initialize(year, make, model)
+               @year = year
+               @make = make
+               @model = model
+            end
+          end
+        </pre>
+        <p>
             In this example you see the Class Car is initialized when a car's year, make and model are passed as arguments and then assigned to their appropriate instance variable.  At the top of the class declaration we have attr_reader of year, make, and model, which means we can call these as methods to check what year <em>car</em> object is but we can't change these attributes once they are assigned to a car object because a Ford can't turn into a Toyota; however, the price of a car change at any time.  To handle this you add atttr_accesor, so this method can read what the price of a car is and write a new price if desired.
         </p>
     </section>
