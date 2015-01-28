@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dillon Downey's Blogs</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  </head>
+  <body>
+
+    <header>
+      <nav class="main-nav">
+        <a href="index.html">Homepage</a>
+        <a href="#">Projects</a>
+        <a href="blog-index.html">Blogs</a>
+      </nav>
+    </header>
+
+    <section class="blog">
+        <h1>Technical Blog</h1>
+        <h2>Variable Scope</h2>
+        <h5>01/27/2015</h5> 
+            
+        <p>
+            Ruby supports variables that can be used within different "scopes" of a program.  Scope can loosely be looked at as "who has priority" over another variable or a good guide to what the variable can be doing or who it is associated with. 
+        </p>
+        <p>
+            <span class="bold">Global Variable</span>: The first "top-level" variable is a global variable denoted with a "$" fr $global_variable.  This variable is able to be used throughout the entire program regardless of where the variable is declared and it takes precedence over all other variables, except maybe CONSTANT variables.  Global variables don't seem to be used too often because you don't want to change the variable and unknowingly mess up a program somewhere else using the same variable.
+        </p>
+        <p>
+            <span class="bold">CONSTANT Variable</span>: The second "top-level" variable is the CONSTANT variable denoted with all caps and this variable also has global scope where the entire program has access regardless of where the variable is declared.  Constants are intended not to be changed after it has been declared.  The ruby interpreter will give you a warning if you are about to alter a constant variable.  I believe ruby will still let you change a constant, but is poor practice. Constant variables are often used to denote a number or something that is not intended to be changed.  
+        </p>
+        <p>
+            <span class="bold">Class Variable</span>:  The third "top-level" variable is the Class variable.  A class variable is denoted with two @ characters "@@" for @@Class_variable and is shared with all instances of the class.  Another way to look at it is that class variables are like global variables, but only within the context of a single class.  Class variables are shared by all objects of a class if the variable in class scope gets altered it will change for all object instances.  
+        <p>
+            <span class="bold">Instance Variable</span>: The fourth "top-level" variable is the Instance variable.  An instance variable is denoted with one "@" character for @instance_variable.  The scope of an instance variable is like the class scope, but if the value of the variable changes it will only change locally to the object instance that made the change.  Instance variables are used within the scope of a class object and are very common when working with classes.
+        </p>
+        <p>
+            <span class="bold">Local Variable</span>: The last level variable is the local variable, which has local scope to the code construct of where the variable is declared.  Example if a local variable is declared within a method or a loop access to the variable outside is not available.  Also, Local variable names typically begin with a lowercase letter or an underscore.  
+        </p>
+        
+    </section>
+
+  </body>
+</html>
