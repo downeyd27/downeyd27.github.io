@@ -102,3 +102,9 @@ footer {
 .bold {
 	font-weight: bold;
 }
+
+pre{
+	background-color: #E6E6E6;
+	margin: 15px 0;
+	font-family: monospace;
+}
