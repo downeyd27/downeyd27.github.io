@@ -17,19 +17,104 @@
     </header>
 
     <section class="blog">
-        <h1>Post Title</h1>
-        <h2>Subtitle, if you want</h2>
-        <h5>Date</h5> 
-            
+      <h1>Technical Blog</h1>
+      <h2>Ruby Hashes vs. JavaScript Objects</h2>
+      <h5>02/12/15</h5> 
+      
+      <h3>Ruby Hashes</h3>    
+      <p>
+          Ruby hashes are a great way to organize and carry data. Hence hashes being called data structures.  There are a couple ways you can create ruby hashes.
+      </p>
+      <ul>
+        <li>Calling new on class Hash: 
+          <pre>
+            <code>
+              names = Hash.new
+              names[1] = "James"
+              names[2] = "Sunny"
+            </code>
+          </pre>
+        </li>
+        <li>Creating hash literal:
+          <pre>
+            <code>
+              names = {
+                "1" => "Sunny"
+                "2" => "James"
+              }
+            </code>
+          </pre>
+        </li>
+      </ul>
+      <p>
+          Ruby hashes have what we call key-value pairs.  As you can see in the example above the numbers on the left are considered the keys and correspond to a value by the "rocket" notation inbetween.  You can also use a colon (:) to separate the key-value pairs.  The key does not have to be a a number by any means either. It is more than acceptable to have a key be any string.  The above example could be more like.
+      </p>
+        <pre>
+          <code>
+            names = {
+              "wife": "Sunny"
+              "husband": "James"
+            }
+          </code>
+        </pre>
+      <p>
+          Another thing to remember with key-value pairs is that each key can only hold one value, but there can be more than one key that has the same value.  To access information about the hash there are a lot of built in ruby methods.
+      </p>
+      <ul>
+        <li>.keys: returns the keys of the hash</li>
+        <li>.values: returns the values of the hash</li>
+        <li>.store(key, value): allows you to store a new key value pair in the hash</li>
+        <li>.length: returns the size of the hash</li>
+        <li>.value?(value): Tests whether the hash contains the given value</li>
+      </ul>
+          <h4>More resources on hashes:</h4>
+      <ul>
+        <li><a href="http://www.tutorialspoint.com/ruby/ruby_hashes.htm">tutorialspoint.com</a></li>
+        <li><a href="http://zetcode.com/lang/rubytutorial/hashes/">zetcode.com</a></li>
+        <li><a href="http://ruby-doc.org/core-2.0.0/Hash.html">Ruby Docs</a></li>
+      </ul>
+
+      <h3>JavaScript Objects</h3>
+
         <p>
-            Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+            JavaScript objects look and act very similar to Ruby hashes.  In JavaScript objects are variables that can hold many property value pairs.  If we had the example of
         </p>
+        <pre>
+          <code>
+            computer = {
+              ram: "16gb",
+              console: "27 inches",
+              CPU: "Intel",
+              hard_drive: "100gb"
+            }
+          </code>
+        </pre>
         <p>
-            Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+            we can see how closely they resemble Ruby hashes.  Don't forget the comma after each item in your JavaScript object.  With JS if you want to access the value of your object's properties, you can add .ram, .console, CPU, or .hard_drive on your object computer.  You can also access the properties with square brackets [].
         </p>
+        <pre>
+          <code>
+          computer[ram]
+          => 16gb
+          computer[console]
+          => 27 inches
+          computer[CPU]
+          => Intel
+          computer[hard_drive]
+          => 100gb
+          </code>
+        </pre>
         <p>
-            Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
+            There is a <a href="https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d">difference</a> between how JavaScript interprets unpackaging the property value when using the dot operator compared to the square brackets.  Say you assigned the property CPU to the variable "X" and then you wanted to access computer.X you would not get "Intel" but you would get undefined.  To access a property that was assigned to a variable it is best to use the square bracket method.
         </p>
+
+        <h4>More Resources on JavaScript Objects</h4>
+        <ul>
+          <li><a href="http://www.w3schools.com/js/js_objects.asp">www.w3school.com</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">developer.mozilla.org</a></li>
+          <li><a href="http://javascript.info/tutorial/objects">javscript.info/tutorial.objects</a></li>
+        </ul>
+
     </section>
 
   </body>
