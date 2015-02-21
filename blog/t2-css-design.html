@@ -27,21 +27,26 @@
       </p>
       <h3>What are the best practices associated with using classes vs. ids?</h3>
       <ul>
-        <li>Classes: allow you too select multiple elements when using CSS from your HTML files as long as they all have the same class name</li>
-        <li>Ids: allow you to select one unique element with an id name when using CSS from your HTML file.  It is possible to use classes and ids on the same elements. 
+        <li><span class="bold">Classes</span>: allow you too select multiple elements when using CSS from your HTML files as long as they all have the same class name</li>
+        <li><span class="bold">Ids</span>: allow you to select one unique element with an id name when using CSS from your HTML file.  It is possible to use classes and ids on the same elements. 
         I believe through my research a stackoverflow quote put it best, "The rule of thumb is that you should ask yourself: is there more than one element which requires the same style, now or at any time in the future?, and if the answer is even maybe, then make it a class."
         </li>
       </ul> 
       <h3>What are the differences between relative, absolute, and fixed positioning?</h3>
       <ul>
-        <li>Relative: an element with a relative position can be moved "relative" to its normal position, which elements default at a static position (the order in which the elements appear on the document)</li>
-        <li>Absolute: an element with an absolute position is positioned based off of its first positioned non-static ancestor element</li>
-        <li>Fixed: an element with a fixed position is positioned relative to the browser window and takes the element out of the normal flow of positioned elements.  It is as if the other elements ignore a fixed position element.</li>
+        <li><span class="bold">Relative</span>: an element with a relative position can be moved "relative" to its normal position, which elements default at a static position (the order in which the elements appear on the document)</li>
+        <li><span class="bold">Absolute</span>: an element with an absolute position is positioned based off of its first positioned non-static ancestor element</li>
+        <li><span class="bold">Fixed</span>: an element with a fixed position is positioned relative to the browser window and takes the element out of the normal flow of positioned elements.  It is as if the other elements ignore a fixed position element.</li>
       </ul>
+      <div class="relative-example">relative
+        <div class="absolute-example">absolute</div>
+      </div>
+      <div class="fixed-example">fixed</div>
+
       <h3>What does it mean to display inline vs inline blocks?</h3>
       <ul>
-        <li>Inline: When displaying an element inline you are allowing elements to sit the the left and right of the element</li>
-        <li>Inline-blocks: When displaying an element inline block you are telling the element to take up the whole row in the browser.  The element before will display on the line above and the element after will display on the line below the element. </li>
+        <li><span class="bold">Inline</span>: When displaying an element inline you are allowing elements to sit on the left and right of the element</li>
+        <li><span class="bold">Inline-blocks</span>: When displaying an element inline block you are telling the element to take up the whole row in the browser.  The element before will display on the line above and the element after will display on the line below the element. </li>
       </ul>
     </section>
 
