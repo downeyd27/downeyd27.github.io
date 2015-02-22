@@ -47,7 +47,7 @@
         </li>
       </ul>
       <p>
-          Ruby hashes have what we call key-value pairs.  As you can see in the example above the numbers on the left are considered the keys and correspond to a value by the "rocket" notation inbetween.  You can also use a colon (:) to separate the key-value pairs.  The key does not have to be a a number by any means either. It is more than acceptable to have a key be any string.  The above example could be more like.
+          Ruby hashes have what we call key-value pairs.  As you can see in the example above the numbers on the left are considered the keys and correspond to a value by the "rocket" notation inbetween.  You can also use a colon ":" to separate the key-value pairs.  The key does not have to be a a number by any means either. It is more than acceptable to have a key be any string.  The above example could be more like.
       </p>
         <pre>
           <code>
@@ -67,7 +67,9 @@
         <li>.length: returns the size of the hash</li>
         <li>.value?(value): Tests whether the hash contains the given value</li>
       </ul>
-          <h4>More resources on hashes:</h4>
+
+      <h4>More resources on hashes:</h4>
+
       <ul>
         <li><a href="http://www.tutorialspoint.com/ruby/ruby_hashes.htm">tutorialspoint.com</a></li>
         <li><a href="http://zetcode.com/lang/rubytutorial/hashes/">zetcode.com</a></li>
@@ -76,46 +78,45 @@
 
       <h3>JavaScript Objects</h3>
 
-        <p>
-            JavaScript objects look and act very similar to Ruby hashes.  In JavaScript objects are variables that can hold many property value pairs.  If we had the example of
-        </p>
-        <pre>
-          <code>
-            computer = {
-              ram: "16gb",
-              console: "27 inches",
-              CPU: "Intel",
-              hard_drive: "100gb"
-            }
-          </code>
-        </pre>
-        <p>
-            we can see how closely they resemble Ruby hashes.  Don't forget the comma after each item in your JavaScript object.  With JS if you want to access the value of your object's properties, you can add .ram, .console, CPU, or .hard_drive on your object computer.  You can also access the properties with square brackets [].
-        </p>
-        <pre>
-          <code>
-          computer[ram]
-          => 16gb
-          computer[console]
-          => 27 inches
-          computer[CPU]
-          => Intel
-          computer[hard_drive]
-          => 100gb
-          </code>
-        </pre>
-        <p>
-            There is a <a href="https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d">difference</a> between how JavaScript interprets unpackaging the property value when using the dot operator compared to the square brackets.  Say you assigned the property CPU to the variable "X" and then you wanted to access computer.X you would not get "Intel" but you would get undefined.  To access a property that was assigned to a variable it is best to use the square bracket method.
-        </p>
+      <p>
+          JavaScript objects look and act very similar to Ruby hashes.  In JavaScript objects are variables that can hold many property value pairs.  If we had the example of
+      </p>
+      <pre>
+        <code>
+          computer = {
+            ram: "16gb",
+            console: "27 inches",
+            CPU: "Intel",
+            hard_drive: "100gb"
+          }
+        </code>
+      </pre>
+      <p>
+          we can see how closely they resemble Ruby hashes.  Don't forget the comma after each item in your JavaScript object.  With JS if you want to access the value of your object's properties, you can add .ram, .console, CPU, or .hard_drive on your object computer.  You can also access the properties with square brackets [].
+      </p>
+      <pre>
+        <code>
+        computer[ram]
+        => 16gb
+        computer[console]
+        => 27 inches
+        computer[CPU]
+        => Intel
+        computer[hard_drive]
+        => 100gb
+        </code>
+      </pre>
+      <p>
+          There is a <a href="https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d">difference</a> between how JavaScript interprets unpackaging the property value when using the dot operator compared to the square brackets.  Say you assigned the property CPU to the variable "X" and then you wanted to access computer.X you would not get "Intel" but you would get undefined.  To access a property that was assigned to a variable it is best to use the square bracket method.
+      </p>
 
-        <h4>More Resources on JavaScript Objects</h4>
-        <ul>
-          <li><a href="http://www.w3schools.com/js/js_objects.asp">www.w3school.com</a></li>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">developer.mozilla.org</a></li>
-          <li><a href="http://javascript.info/tutorial/objects">javscript.info/tutorial.objects</a></li>
-        </ul>
+      <h4>More Resources on JavaScript Objects</h4>
+      <ul>
+        <li><a href="http://www.w3schools.com/js/js_objects.asp">www.w3school.com</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">developer.mozilla.org</a></li>
+        <li><a href="http://javascript.info/tutorial/objects">javscript.info/tutorial.objects</a></li>
+      </ul>
 
     </section>
-
   </body>
 </html>
