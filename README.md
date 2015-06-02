@@ -1,4 +1,6 @@
 downeyd27.github.io
 ===================
 
-my personal website
+<h2>Welcome to my website!</h2>  
+
+There are a few basic blogs written to document the beginning of my learning process, projects, and contanct information.
