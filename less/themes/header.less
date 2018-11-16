@@ -1,0 +1,63 @@
+header {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 1em;
+  ul {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  li {
+    list-style-type: none;
+    height: 50px;
+  }
+  nav {
+    height: auto;
+    background-color: grey;
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
+      li {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+      li:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+/* TABLET STYLESHEET */
+
+@media screen and (min-width: 481px) {
+}
+
+/* DESKTOP STYLESHEET */
+
+@media screen and (min-width: 1025px) {
+  header {
+    nav {
+      height: 75px;
+      padding: 0.8em 1em 1em 0;
+      ul {
+        float: right;
+        flex-direction: row;
+        li {
+          margin-right: 25px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+footer {
+  background-color: @brand-secondary-color;
+  img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  ul {
+    list-style:none inside none;
+    padding-left: 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+  .resources {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .copyright {
+    border-top: 1px solid @dark-color;
+    width: 100%;
+    margin-top: 1em;
+    p {
+      margin: .5em 0;
+      text-align: center;
+    }
+  }
+  .brand-logo {
+    display: none;
+  }
+  i {
+    margin-left: .5em;
+  }
+}
+
+/* TABLET STYLESHEET */
+
+@media screen and (min-width: 481px) {
+  footer {
+    .resources {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+/* DESKTOP STYLESHEET */
+
+@media screen and (min-width: 1025px) {
+}

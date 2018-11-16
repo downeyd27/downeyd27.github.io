@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- TODO: Create a script that grabs the file name and add it as the class of the page -->
+<!-- TODO: Create a script that grabs the Page Name and adds it to the title element -->
+<!-- TODO: Add "skip navigation" functionality for navbar for ADA Compliance -->
+<!-- TODO: Refactor grid layout to use CSS Grid or Bootstrap 5 -->
+<!-- TODO: Add Schema data -->
+<!-- TODO: Add Google Analytics or Piwik for stats and campaign tracking.  Make sure to not track my own IP address-->
+<!-- TODO: Ask Martin about desigining a brand logo, fonts, and overall portfolio design/layout. -->
+<!-- TODO: Refactor class names to use BEM methodology -->
+<!-- TODO: JavaScript the header, footer, and schema data in from a separate file to be included -->
+<!-- TODO: Download pesticide Chrome Extension -->
+<!-- TODO: Add meta description and meta keywords -->
+<!-- TODO: Create modal popup that loads in the contact me form that is cookie based and only displays after the user has been on the website for at least 1 minute. -->
+<!-- TODO: Set up hosting for Google domain dillondowney.com -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Dillon Downey">
+
+    <title>Website Title | Page Title</title>
+    <!-- TODO: find font or two that would work well -->
+    <link href="css/styles.css?v=0.1" rel="stylesheet" type="text/css">
+</head>
+
+<body class="index">
+    <!-- /include/header.html -->
+    <header>
+        <div class="header-container">
+            <nav>
+                <div class="brand-logo">
+                    <!-- TODO: Research the proper useage of alt and title attributes -->
+                    <a href="/"><img src="/images/brand-logo.png" alt="Brand logo" title="Link to homepage"></a>
+                </div>
+                <ul>
+                    <!-- TODO: Add CSS to highlight the page that the user is currently on -->
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <ul class="social-media">
+                    <li class="social-media__item"><a href="#" class="social-media__link"><i class="fa fa-envelope"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="sr-only">Home</h1>
+        <div class="main-jumbotron">
+            <img src="/images/#" alt="main jumbotron">
+
+        </div>
+        <div class="cta-container group">
+            <div class="call-to-action col span_4_of_12">
+                <div>
+                    <img src="#" alt="Interests">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nemo, non. A laborum vel magni aspernatur praesentium doloremque vero numquam enim eaque, consequuntur eligendi voluptate odio. Ipsa nisi, praesentium ullam.
+                    </p>
+                </div>
+            </div>
+            <div class="call-to-action col span_4_of_12">
+                <div>
+                    <img src="#" alt="Projects">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, dolores voluptatibus provident minus, nesciunt mollitia quis? Veritatis nulla vel excepturi, sed tempora aliquid adipisci accusamus a sit eum tenetur nam.
+                    </p>
+                </div>
+            </div>
+            <div class="call-to-action col span_4_of_12">
+                <div>
+                    <img src="#" alt="Education">
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo mollitia quibusdam veniam nulla eum. Eveniet sequi ipsa veniam qui nesciunt hic voluptatibus, officiis praesentium facere nihil itaque mollitia nostrum enim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- /include/footer.html -->
+        <div class="footer-container">
+            <div class="resources group">
+                <div class="brand-logo col span_3_of_12">
+                    <img src="#" alt="Company Brand Logo">
+                </div>
+                <div class="col span_3_of_12 quick-links">
+                    <h2>Quick Links</h2>
+                    <ul class="quick-links__container">
+                        <li class="quick-links__item"><a href="/projects">Projects</a></li>
+                        <li class="quick-links__item"><a href="/about">About</a></li>
+                        <li class="quick-links__item"><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col span_3_of_12">
+                    <!-- TODO: Find script for adding a Table of Contents based on the heading tag hierarchy -->
+                    <h2>Table of Contents</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit maxime, consequuntur, cum dolorem ad animi suscipit quis rem odit deserunt sint, praesentium aspernatur nulla ab maiores, quibusdam dolorum doloribus voluptate.
+                    </p>
+                </div>
+                <div class="col span_3_of_12">
+                    <h2>Connect</h2>
+                    <ul>
+                        <li><a href="">Connect with me on LinkedIn<i class="fa fa-instagram"></i></a></li>
+                        <li><a href="">Check out my GitHub</a><i class="fa fa-github-square"></i></li>
+                        <li><a href="">Follow me on Twitter</a><i class="fa fa-twitter-square"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright powered-by">
+            <!-- TODO: Add small version of brand logo for "powered by logo" -->
+            <img src="/images/#" alt="Powered by logo" title="Powered by Dillon Downey">
+            <p>Dillon Downey 2018&#169;</p>
+        </div>
+    </footer>
+    <!--
+        To avoid render-blocking CSS, code right before </body> section of website's HTML.  This may result in FOIT, flash of invisible text. But it will pass Google PageSpeed Insights warning for rending blocking.
+    -->
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

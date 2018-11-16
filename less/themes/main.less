@@ -1,0 +1,59 @@
+// Form Styles
+#contact-form {
+  legend {
+    margin-bottom: 20px;
+  }
+  .input-group {
+    display: flex;
+    label {
+      cursor: pointer;
+      width: 100px;
+      height: 30px;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    input {
+      width: 100%;
+      &:valid {
+        background-color: lightGreen;
+      }
+      &:invalid {
+        background-color: lightPink;
+      }
+      &:focus {
+        background-color: lightGrey;
+        box-shadow: 0 0 6px 0 blue, inset 0 0 4px 0 rgba(0,0,0,0.15);
+      }
+    }
+  }
+  .submit-n-reset-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    > li:first-of-type {
+      margin-right: 20px;
+    }
+  }
+}
+
+// Page Styles
+#contact-page {
+
+}
+#about-page {
+
+}
+
+/* TABLET STYLESHEET */
+
+@media screen and (min-width: 481px) {
+
+}
+
+/* DESKTOP STYLESHEET */
+
+@media screen and (min-width: 1025px) {
+
+}

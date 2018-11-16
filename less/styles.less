@@ -1,0 +1,69 @@
+// out: ../css/styles.css, sourcemap: false, compress: true
+
+@import "./themes/reset.less";
+@import "./themes/variables.less";
+@import "./themes/grid.less";
+@import "./themes/generic.less";
+@import "./themes/palette.less";
+@import "./themes/flex-box.less"
+@import "./themes/mixins.less";
+@import "./themes/header.less";
+@import "./themes/main.less";
+@import "./themes/main-home.less";
+@import "./themes/footer.less";
+
+* { outline: 1px solid red; }
+
+body {
+  font-size: 12px;
+}
+
+nav, main, aside, footer {
+  padding: 1em;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h1 { .headerFontAttributes(@dark-color; 1.8em); }
+h2 { .headerFontAttributes(@dark-color; 1.4em); }
+h3 { .headerFontAttributes(@dark-color; 1.1em); }
+h4 { .headerFontAttributes(@dark-color; .9em); }
+h5 { .headerFontAttributes(@dark-color; .85em); }
+h6 { .headerFontAttributes(@dark-color; .75em); }
+
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+li {
+  line-height: 1.5em;
+}
+
+img {
+  padding: 1em;
+}
+
+p {
+  margin-left: .25em;
+  margin-right: .25em;
+}
+
+/* TABLET STYLESHEET */
+
+@media screen and (min-width: 481px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* DESKTOP STYLESHEET */
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+}
