@@ -20,8 +20,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <meta name="author" content="Dillon Downey">
-    <meta name="keywords" content="developer, resume, projects, portfolio, Portland, Eugene, Oregon, Vancouver, Seattle, Washington">
-    <meta name="description" content="www.dillondowney.com is a website to host personal projects and resume for Dillon Downey.  Enter to learn more about Dillon and his tech career. " />
+    <meta name="keywords" content="Dillon Downey, Dillon, Downey, developer, resume, projects, portfolio, Portland, Eugene, Oregon, Vancouver, Seattle, Washington">
+    <meta name="description" content="Dillon Downey in Portland Oregon is a front end developer looking to expand his software developer and management skills. Enter to learn more." />
+    <meta name="copyright" content="Dillon Downey Portland, Oregon. All rights reserved">
+    <meta name="city" content="Portland">
+    <meta name="country" content="US">
+    <meta name="robots" content="INDEX,FOLLOW">
 
     <title>Website Title | Page Title</title>
     <!-- Bootstrap 4.1.3 CDN first before custom styles.  Override Bootstrap styles as necessary  -->
@@ -37,12 +41,22 @@
             "image": "/images/angus.jpg",
             "jobTitle": "Technical Support Team Lead",
             "name": "Dillon Downey",
-            "url": "//www.dillondowney.com",
+            "url": "https://www.dillondowney.com",
+            "logo": "/images/dillon-downey-logo.png"
+            "sameAs" : [
+                "https://twitter.com/downeydillon1"
+            ],
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Portland",
               "addressRegion": "OR",
-              "postalCode": "97266"
+              "postalCode": "97266",
+              "addressCountry": "US"
+            },
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Dealer Spike LLC",
+                "url" : "https://www.dealerspike.com"
             }
         }
     </script>
@@ -153,13 +167,15 @@
 <!--
     To avoid render-blocking CSS, add code right before </body>..  This may result in FOIT, flash of invisible text. But it will pass Google PageSpeed Insights warning for rending blocking.
 -->
-<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 <script src="/js/main.js"></script>
+
 </body>
 
 </html>
